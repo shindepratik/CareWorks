@@ -1,0 +1,25 @@
+Feature: searching via google search
+
+  Scenario Outline: Testing the successful search functionality on Google
+    Given a user goes to Google
+    When they enter <query> in the search box
+    Then they will get results for <query>
+
+    Examples:
+    |query|
+    |careworkstech|
+    |ohio|
+    |ruby-cucumber|
+
+
+  Scenario Outline: Testing the unsuccessful search functionality on Google
+    Given a user goes to Google
+    When they enter <query> in the search box
+    Then they will get results for <query>
+
+    Examples:
+    |query|
+    |p94hgf5|
+    |foewjwfkndsd|
+    |ui53bvj2fh|
+
